@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: jgvjpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: jgvjpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: jgvjpipelinesjavascriptdocker 
+          image: mycontainerr1.azurecr.io/jgvjpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
